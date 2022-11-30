@@ -1,0 +1,138 @@
+@import "vars";
+@import "mixins";
+// @붙이면 가져올수 있다. (import할때는 제목의 언더바를 붙이지 않는다)
+
+body {
+  font-family: "Roboto", "Noto Sans KR", "돋움";
+  color: #111;
+  font-size: 18px;
+  overflow-x: hidden;
+  //background-color: green;
+  // min-height: 3000px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+//이미지는 글자처럼 처리된다.
+img {
+  vertical-align: top;
+  //이걸쓰면 이미지 위로 붙여 준다. 안쓰면 이미가 살짝 벌어짐
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+#header {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  h1 {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    img {
+      height: 38px;
+    }
+  }
+  nav {
+    > ul {
+      display: flex;
+      > li {
+        position: relative;
+        &.on {
+          .depth01 {
+            background-color: #fff;
+            color: $main-color;
+            &:after {
+              opacity: 1;
+            }
+          }
+          .depth02 {
+            opacity: 1;
+            pointer-events: auto;
+          }
+        }
+      }
+      .depth01 {
+        display: flex;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+        transition: all 0.25s ease;
+        position: relative;
+        i {
+          margin-left: 10px;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          left: 20px;
+          right: 20px;
+          height: 1px;
+          background-color: $main-color;
+          bottom: 0;
+          transition: all 0.25s ease;
+          opacity: 0;
+        }
+        &.no-line {
+          &:after {
+            display: none;
+          }
+        }
+      }
+      .depth02 {
+        position: absolute;
+        width: 170px;
+        padding: 20px 0;
+        opacity: 0;
+        background-color: #fff;
+        color: #333;
+        font-size: 16px;
+        font-weight: 400;
+        transition: all 0.25s ease;
+        pointer-events: none;
+        li {
+          a {
+            display: block;
+            padding: 10px 20px;
+          }
+        }
+      }
+    }
+  }
+  .util {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    ul {
+      display: flex;
+      li {
+        padding-right: 25px;
+        &:nth-last-child(1) {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
