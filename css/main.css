@@ -333,8 +333,16 @@
 }
 
 #news {
-  padding: 100px 0;
+  padding: 100px 0 150px;
   position: relative;
+}
+#news:before {
+  content: "";
+  width: 100%;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 0;
 }
 #news .news-txt {
   display: flex;
@@ -357,7 +365,7 @@
   background-color: #40060b;
   width: 670px;
   height: 560px;
-  bottom: 50px;
+  bottom: 100px;
   margin-left: -85px;
 }
 #news .news-slide ul li {
@@ -435,7 +443,139 @@
   font-weight: 900;
   color: #40060b;
 }
+#news .news-slide ul .swiper-slide-active {
+  box-shadow: none;
+}
 #news .news-slide ul .swiper-slide-active:before {
   width: 285px;
   background-color: transparent;
+}
+
+#footer {
+  padding: 100px 0;
+}
+#footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+#footer .address-box {
+  font-weight: 500;
+}
+#footer .address-box .site {
+  display: flex;
+  padding: 40px 0;
+}
+#footer .address-box .site li:nth-child(1):after {
+  content: "|";
+  padding: 0 40px;
+  opacity: 0.5;
+}
+#footer .address-box .add {
+  line-height: 1.25;
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+#footer .address-box .list-box {
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#footer .address-box .list-box li {
+  width: 290px;
+  height: 50px;
+  color: #fff;
+  background-color: #40060b;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+}
+#footer .address-box .list-box li:nth-child(1):before {
+  content: "\f15c";
+  font-family: "FontAwesome";
+  margin-right: 10px;
+}
+#footer .address-box .list-box li:nth-child(2) {
+  background-color: #444;
+}
+#footer .address-box .list-box li:nth-child(2):before {
+  content: "\f15c";
+  font-family: "FontAwesome";
+  margin-right: 10px;
+}
+#footer .address-box .list-box li:nth-child(3) {
+  background-color: #444;
+}
+#footer .address-box .list-box li:nth-child(3):before {
+  content: "\f15b";
+  font-family: "FontAwesome";
+  margin-right: 10px;
+}
+#footer .address-box .list-box li:nth-child(4):before {
+  content: "\f249";
+  font-family: "FontAwesome";
+  margin-right: 10px;
+}
+#footer .address-box .list-box li:nth-child(5) {
+  background-color: #fff;
+  color: #333;
+  font-weight: 700;
+  border-bottom: 2px solid #333;
+  display: flex;
+  justify-content: space-between;
+}
+#footer .address-box .list-box li:nth-child(5):after {
+  content: "\f107";
+  font-family: "FontAwesome";
+}
+#footer .address-box .list-box li:nth-child(6) {
+  background-color: #444;
+}
+#footer .address-box .list-box li:nth-child(6):before {
+  content: "\f08e";
+  font-family: "FontAwesome";
+  margin-right: 10px;
+}
+#footer .address-box .copyright {
+  margin-top: 50px;
+  font-size: 14px;
+}
+#footer .address-box .copyright span {
+  color: #f00;
+}
+#footer .inquiry {
+  padding: 50px 0;
+  width: 40%;
+}
+#footer .inquiry .title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #333;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+}
+#footer .inquiry .title h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+#footer .inquiry .title h2 span {
+  font-size: 18px;
+  font-weight: 300;
+}
+#footer .inquiry .title .rule {
+  font-size: 16px;
+}
+#footer .inquiry .title .rule button {
+  background-color: #40060b;
+  color: #fff;
+  border-radius: 100px;
+  padding: 3px 20px;
+  margin-right: 10px;
+}
+#footer .inquiry input {
+  border: none;
 }
