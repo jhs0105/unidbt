@@ -480,7 +480,7 @@
   display: flex;
   flex-wrap: wrap;
 }
-#footer .address-box .list-box li {
+#footer .address-box .list-box > li {
   width: 290px;
   height: 50px;
   color: #fff;
@@ -493,34 +493,41 @@
   font-weight: 300;
   display: flex;
   align-items: center;
+  position: relative;
 }
-#footer .address-box .list-box li:nth-child(1):before {
+#footer .address-box .list-box > li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#footer .address-box .list-box > li:nth-child(1):before {
   content: "\f15c";
   font-family: "FontAwesome";
   margin-right: 10px;
 }
-#footer .address-box .list-box li:nth-child(2) {
+#footer .address-box .list-box > li:nth-child(2) {
   background-color: #444;
 }
-#footer .address-box .list-box li:nth-child(2):before {
+#footer .address-box .list-box > li:nth-child(2):before {
   content: "\f15c";
   font-family: "FontAwesome";
   margin-right: 10px;
 }
-#footer .address-box .list-box li:nth-child(3) {
+#footer .address-box .list-box > li:nth-child(3) {
   background-color: #444;
 }
-#footer .address-box .list-box li:nth-child(3):before {
+#footer .address-box .list-box > li:nth-child(3):before {
   content: "\f15b";
   font-family: "FontAwesome";
   margin-right: 10px;
 }
-#footer .address-box .list-box li:nth-child(4):before {
+#footer .address-box .list-box > li:nth-child(4):before {
   content: "\f249";
   font-family: "FontAwesome";
   margin-right: 10px;
 }
-#footer .address-box .list-box li:nth-child(5) {
+#footer .address-box .list-box > li:nth-child(5) {
   background-color: #fff;
   color: #333;
   font-weight: 700;
@@ -528,17 +535,40 @@
   display: flex;
   justify-content: space-between;
 }
-#footer .address-box .list-box li:nth-child(5):after {
-  content: "\f107";
-  font-family: "FontAwesome";
-}
-#footer .address-box .list-box li:nth-child(6) {
+#footer .address-box .list-box > li:nth-child(6) {
   background-color: #444;
 }
-#footer .address-box .list-box li:nth-child(6):before {
+#footer .address-box .list-box > li:nth-child(6):before {
   content: "\f08e";
   font-family: "FontAwesome";
   margin-right: 10px;
+}
+#footer .address-box .list-box .family.up .family-site {
+  opacity: 1;
+  pointer-events: auto;
+  bottom: 50px;
+}
+#footer .address-box .list-box .family.up .fa-angle-down {
+  transform: rotate(180deg);
+}
+#footer .address-box .list-box .family-site {
+  width: 290px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  background-color: #fff;
+  padding: 10px 0;
+  border: 1px solid #333;
+  border-bottom: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.25s ease;
+}
+#footer .address-box .list-box .family-site li {
+  padding: 10px 20px;
+}
+#footer .address-box .list-box .family-site li:hover {
+  text-decoration: underline;
 }
 #footer .address-box .copyright {
   margin-top: 50px;
@@ -550,6 +580,10 @@
 #footer .inquiry {
   padding: 50px 0;
   width: 40%;
+}
+#footer .inquiry form {
+  display: flex;
+  flex-direction: column;
 }
 #footer .inquiry .title {
   display: flex;
@@ -568,6 +602,8 @@
 }
 #footer .inquiry .title .rule {
   font-size: 16px;
+  display: flex;
+  align-items: center;
 }
 #footer .inquiry .title .rule button {
   background-color: #40060b;
@@ -576,6 +612,52 @@
   padding: 3px 20px;
   margin-right: 10px;
 }
+#footer .inquiry .title .rule input {
+  width: 15px;
+  height: 15px;
+}
 #footer .inquiry input {
   border: none;
+  border-bottom: 1px solid #999;
+  width: 250px;
+  height: 50px;
+  outline: none;
+}
+#footer .inquiry .phone-mail {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+#footer .inquiry textarea {
+  resize: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #999;
+}
+#footer .inquiry .btn-submit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: #111;
+  color: #fff;
+  width: 180px;
+  box-sizing: border-box;
+  padding: 0 30px;
+  height: 60px;
+  margin-top: 10px;
+  margin-left: auto;
+  transition: all 0.25s ease;
+}
+#footer .inquiry .btn-submit i {
+  transition: all 0.25s ease;
+  color: #f00;
+}
+#footer .inquiry .btn-submit:hover {
+  background-color: #40060b;
+}
+#footer .inquiry .btn-submit:hover i {
+  color: #fff;
+  margin-right: -10px;
 }

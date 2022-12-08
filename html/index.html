@@ -26,7 +26,6 @@
     <script src="../js/gsap/ScrollToPlugin.min.js"></script>
     <script src="../js/gsap/ScrollTrigger.min.js"></script>
     <script src="../js/gsap/CSSRulePlugin.min.js"></script>
-    <script src="../js/gsap/"></script>
     <script src="../js/splitting.min.js"></script>
     <script src="../js/aos.js"></script>
     <script src="../js/fullpage.min.js"></script>
@@ -131,7 +130,7 @@
     <section id="business">
       <div class="container">
         <div class="txt-box">
-          <h3>Business</h3>
+          <h3 data-splitting>Business</h3>
           <p>
             대표적인 건축자재인 MDF와 이를 기반으로 마루판을 생산하는 유니드비티플러스는 <br />
             높은 기술력과 독보적인 품질경쟁력으로 고객의 인정을 받고 있습니다.
@@ -320,7 +319,7 @@
     <section id="about">
       <div class="container">
         <div class="text-box">
-          <h3>About <img src="../images/layout/main_about_logo.png" alt="" /></h3>
+          <h3 data-splitting>About <img src="../images/layout/main_about_logo.png" alt="" /></h3>
           <h4>
             혁신과 창의로 세상이 필요한 것을 만들어 <br />
             인류의 보다 나은 내일에 기여한다.
@@ -344,7 +343,7 @@
       </div>
     </section>
     <section id="information">
-      <div class="information-box recruit">
+      <div class="information-box recruit" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1000">
         <h3>채용정보</h3>
         <ul>
           <li>
@@ -358,7 +357,7 @@
           </li>
         </ul>
       </div>
-      <div class="information-box ad">
+      <div class="information-box ad" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1000">
         <h3>홍보영상</h3>
         <ul>
           <li>
@@ -373,11 +372,11 @@
     <section id="news">
       <div class="container">
         <div class="news-txt">
-          <h3>News Room</h3>
+          <h3 data-splitting>News Room</h3>
           <p>유니드비티플러스의 다양한 회사소식을 만나보세요.</p>
         </div>
-        <div class="news-color-box"></div>
-        <div class="news-slide">
+        <div class="news-color-box" data-aos="fade-up" data-aos-duration="1500"></div>
+        <div class="news-slide" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
           <ul class="swiper-wrapper">
             <li class="swiper-slide">
               <a href="">
@@ -431,11 +430,11 @@
               <a href="">
                 <div class="date">
                   22.11 <br />
-                  <span>29</span>
+                  <span>01</span>
                 </div>
                 <div class="contents">
                   <div class="img-box">
-                    <img src="../images/main/news02.jpg" alt="" />
+                    <img src="../images/main/news03.jpg" alt="" />
                   </div>
                   <div class="txt-box">
                     <h3>전북도, 산업평화 모범사업장 선정</h3>
@@ -446,12 +445,12 @@
             <li class="swiper-slide">
               <a href="">
                 <div class="date">
-                  22.11 <br />
-                  <span>29</span>
+                  22.06 <br />
+                  <span>02</span>
                 </div>
                 <div class="contents">
                   <div class="img-box">
-                    <img src="../images/main/news02.jpg" alt="" />
+                    <img src="../images/main/news04.jpg" alt="" />
                   </div>
                   <div class="txt-box">
                     <h3>전북도, 산업평화 모범사업장 선정</h3>
@@ -462,12 +461,12 @@
             <li class="swiper-slide">
               <a href="">
                 <div class="date">
-                  22.11 <br />
-                  <span>29</span>
+                  22.05 <br />
+                  <span>31</span>
                 </div>
                 <div class="contents">
                   <div class="img-box">
-                    <img src="../images/main/news02.jpg" alt="" />
+                    <img src="../images/main/news05.jpg" alt="" />
                   </div>
                   <div class="txt-box">
                     <h3>전북도, 산업평화 모범사업장 선정</h3>
@@ -478,12 +477,27 @@
             <li class="swiper-slide">
               <a href="">
                 <div class="date">
-                  22.11 <br />
-                  <span>29</span>
+                  22.05 <br />
+                  <span>31</span>
                 </div>
                 <div class="contents">
                   <div class="img-box">
-                    <img src="../images/main/news02.jpg" alt="" />
+                    <h3>유니드, 보드사업부문 '유니드비티플러스'로 인적분할</h3>
+                    <p>[이데일리 경계영 기자] 유니드(014830)는 MDF·가공보드를 제조·판매하는 보드사업부문을 ‘유니드비티플러스’(가칭)로 인적 분할한다고 31일 공시했다.</p>
+                  </div>
+                  <div class="txt-box"></div>
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <div class="date">
+                  22.03 <br />
+                  <span>15</span>
+                </div>
+                <div class="contents">
+                  <div class="img-box">
+                    <img src="../images/main/news07.png" alt="" />
                   </div>
                   <div class="txt-box">
                     <h3>전북도, 산업평화 모범사업장 선정</h3>
@@ -494,12 +508,12 @@
             <li class="swiper-slide">
               <a href="">
                 <div class="date">
-                  22.11 <br />
-                  <span>29</span>
+                  22.02 <br />
+                  <span>22</span>
                 </div>
                 <div class="contents">
                   <div class="img-box">
-                    <img src="../images/main/news02.jpg" alt="" />
+                    <img src="../images/main/news08.jpg" alt="" />
                   </div>
                   <div class="txt-box">
                     <h3>전북도, 산업평화 모범사업장 선정</h3>
@@ -510,12 +524,60 @@
             <li class="swiper-slide">
               <a href="">
                 <div class="date">
-                  22.11 <br />
-                  <span>29</span>
+                  21.11 <br />
+                  <span>16</span>
                 </div>
                 <div class="contents">
                   <div class="img-box">
-                    <img src="../images/main/news02.jpg" alt="" />
+                    <img src="../images/main/news09.png" alt="" />
+                  </div>
+                  <div class="txt-box">
+                    <h3>전북도, 산업평화 모범사업장 선정</h3>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <div class="date">
+                  21.09 <br />
+                  <span>14</span>
+                </div>
+                <div class="contents">
+                  <div class="img-box">
+                    <img src="../images/main/news10.png" alt="" />
+                  </div>
+                  <div class="txt-box">
+                    <h3>전북도, 산업평화 모범사업장 선정</h3>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <div class="date">
+                  21.08 <br />
+                  <span>10</span>
+                </div>
+                <div class="contents">
+                  <div class="img-box">
+                    <img src="../images/main/news11.png" alt="" />
+                  </div>
+                  <div class="txt-box">
+                    <h3>전북도, 산업평화 모범사업장 선정</h3>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <div class="date">
+                  21.03 <br />
+                  <span>31</span>
+                </div>
+                <div class="contents">
+                  <div class="img-box">
+                    <img src="../images/main/news12.jpg" alt="" />
                   </div>
                   <div class="txt-box">
                     <h3>전북도, 산업평화 모범사업장 선정</h3>
@@ -544,7 +606,14 @@
             <li><a href="">영상정보처리기기 운영/관리방침</a></li>
             <li><a href="">신문고</a></li>
             <li><a href="">네이버 블로그</a></li>
-            <li>FAMILY SITE</li>
+            <li class="family">
+              FAMILY SITE <i class="fa-solid fa-angle-down"></i>
+              <ul class="family-site up">
+                <li><a href="">유니드</a></li>
+                <li><a href="">유니드글로벌상사</a></li>
+                <li><a href="">올고다</a></li>
+              </ul>
+            </li>
             <li><a href="">원재료.제품 입출고현황</a></li>
           </ul>
           <div class="copyright">COPYRIGHT 2022 <span>UNID btplus</span>. ALL RIGHTS RESERVED</div>
@@ -555,7 +624,7 @@
               <h2>온라인 문의 <span>Online Inquiry</span></h2>
               <div class="rule">
                 <button>개인정보처리방침 보기</button>
-                <input type="checkbox" />동의
+                <label for=""><input type="checkbox" />동의</label>
               </div>
             </div>
             <input type="text" placeholder="성명을 입력해 주세요" />
@@ -564,14 +633,121 @@
               <input type="text" placeholder="이메일을 입력해주세요." />
             </div>
             <textarea name="" id="" cols="30" rows="2" placeholder="내용을 입력해주세요 (150자 이내)"></textarea>
-            <button>작성완료</button>
+            <button type="submit" class="btn-submit">작성완료<i class="fa-solid fa-angle-right"></i></button>
           </form>
         </div>
       </div>
     </footer>
   </body>
   <script>
+    AOS.init();
     Splitting();
+    const header = $("#header");
+    const familySite = $(".family-site");
+    const family = $(".family");
+
+    family.on("click", () => {
+      family.toggleClass("up");
+    });
+
+    $(window).on("scroll", () => {
+      //console.log($(window).scrollTop());
+      if ($(window).scrollTop() > 100) {
+        header.addClass("on");
+      } else {
+        header.removeClass("on");
+      }
+    });
+
+    const businessTL = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#business",
+        toggleActions: "restart pause resume pause",
+      },
+    });
+    businessTL
+      .from("#business .txt-box .char", {
+        y: 50,
+        duration: 0.5,
+        opacity: 0,
+        stagger: { each: 0.05 },
+      })
+      .from(
+        "#business .txt-box p",
+        {
+          y: 50,
+          duration: 0.8,
+          opacity: 0,
+        },
+        "-=0.8"
+      );
+
+    const aboutTL = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#about",
+        toggleActions: "restart pause resume pause",
+      },
+    });
+    aboutTL
+      .from("#about .text-box h3", {
+        y: 50,
+        opacity: 0,
+        duration: 0.8,
+      })
+      .from(
+        "#about .text-box h3 img",
+        {
+          y: 50,
+          opacity: 0,
+          duration: 0.8,
+        },
+        "-=0.5"
+      )
+      .from(
+        "#about .text-box h4",
+        {
+          y: 50,
+          opacity: 0,
+          duration: 1.0,
+        },
+        "-=0.5"
+      )
+      .from("#about .img-box .img01", { x: 20, opacity: 0, duration: 0.5 }, "-=0.2")
+      .from("#about .img-box .img02", { x: -20, opacity: 0, duraition: 0.5 }, "-=0.2")
+      .from("#about .img-box .img03", { y: 20, opacity: 0, duraition: 0.5 }, "-=0.2")
+      .from(
+        "#about .texture",
+        {
+          x: -100,
+          opacity: 0,
+          duration: 0.8,
+        },
+        "-=0.5"
+      );
+
+    const newsTL = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#news",
+        toggleActions: "restart pause resume pause",
+      },
+    });
+    newsTL
+      .from("#news .news-txt .char", {
+        y: 50,
+        duration: 0.5,
+        opacity: 0,
+        stagger: { each: 0.05 },
+      })
+      .from(
+        "#news .news-txt p",
+        {
+          y: 50,
+          duration: 0.8,
+          opacity: 0,
+        },
+        "-=0.8"
+      );
+
     const swiper = new Swiper("#main-visual .main-slide", {
       loop: true,
       speed: 1500,
@@ -616,7 +792,6 @@
 
     $("body").imagesLoaded(function () {
       // images have loaded
-
       const newsSwiper = new Swiper("#news .news-slide", {
         loop: true,
         slidesPerView: "auto",
@@ -630,6 +805,11 @@
             gsap.to("#news .swiper-slide-prev", { width: 350 });
             gsap.to("#news .swiper-slide-prev a", { width: 285, color: "#333" });
             gsap.to("#news .swiper-slide-prev .date span", { color: "#40060b" });
+            gsap.to("#news .swiper-slide-next", { width: 350 });
+            gsap.to("#news .swiper-slide-next a", { width: 285, color: "#333" });
+            gsap.to("#news .swiper-slide-next .date span", { color: "#40060b" });
+            gsap.to("#news .swiper-slide-active a", { color: "#fff" });
+            gsap.to("#news .swiper-slide-active .date span", { color: "#fff" });
           },
 
           slideChangeTransitionEnd: function () {
@@ -642,8 +822,6 @@
         },
       });
     });
-
-    const header = $("#header");
 
     $("#gnb > li").on("mouseenter", function () {
       $(this).addClass("on");

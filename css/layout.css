@@ -29,12 +29,21 @@ button {
 }
 
 #header {
+  height: 100px;
   position: fixed;
   z-index: 99;
   width: 100%;
   color: #fff;
   font-weight: 500;
   font-size: 20px;
+  transition: all 0.5s ease;
+}
+#header.on {
+  color: #111;
+  height: 80px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
 }
 #header .container {
   width: 90vw;
