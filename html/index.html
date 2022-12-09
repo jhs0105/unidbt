@@ -647,7 +647,8 @@
     const family = $(".family");
 
     family.on("click", () => {
-      family.toggleClass("up");
+      family.addClass("up");
+      familySite.slideToggle();
     });
 
     $(window).on("scroll", () => {

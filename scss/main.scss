@@ -546,27 +546,21 @@
       .family {
         &.up {
           .family-site {
-            opacity: 1;
             pointer-events: auto;
-            bottom: 50px;
-          }
-          .fa-angle-down {
-            transform: rotate(180deg);
           }
         }
       }
       .family-site {
         width: 290px;
         position: absolute;
-        bottom: 20px;
+        bottom: 50px;
         left: 0;
         background-color: #fff;
         padding: 10px 0;
         border: 1px solid #333;
         border-bottom: none;
-        opacity: 0;
+        display: none;
         pointer-events: none;
-        transition: all 0.25s ease;
         li {
           padding: 10px 20px;
           &:hover {
